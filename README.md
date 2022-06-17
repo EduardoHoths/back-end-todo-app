@@ -1,5 +1,4 @@
 # Back end Todo App
-<hr>
 
 ## 📜 Descrição 
 
