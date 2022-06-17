@@ -52,3 +52,5 @@ SECRET="UMA COMBINAÇÃO ALEATÓRIA DE CARACTERES PARA GERAR O TOKEN DE VERIFICA
 ```
 5. Execute a aplicação com: ``npm start``
 
+## 📋 Visualize a aplicação completa
+- [Todo App](https://front-end-todo-app.vercel.app/)
