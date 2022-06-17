@@ -18,12 +18,24 @@ app.use((req, res, next) => {
     next();
 });
 
-const db = mysql.createPool({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DB,
-});
+let db: mysql.Pool;
+
+if(process.env.CLEARDB_DATABASE_URL){
+    db = mysql.createPool({
+        host: process.env.HOST_PRODUCTION,
+        user: process.env.USER_PRODUCTION,
+        password: process.env.PASSWORD_PRODUCTION,
+        database: process.env.DB_PRODUCTION,
+    });
+} else {
+    db = mysql.createPool({
+        host: process.env.HOST,
+        user: process.env.USER,
+        password: process.env.PASSWORD,
+        database: process.env.DB,
+    });
+}
+
 
 app.listen(process.env.PORT, () => {
     console.log("Server is running on " + process.env.PORT);
