@@ -50,7 +50,7 @@ PASSWORD="SUA SENHA DO BANCO DE DADOS"
 DB="O NOME DO SEU BANCO DE DADOS"
 SECRET="UMA COMBINAÇÃO ALEATÓRIA DE CARACTERES PARA GERAR O TOKEN DE VERIFICAÇÃO"
 ```
-5. Execute a aplicação com: ``npm start``
+5. Execute a aplicação com: ``npm run start:dev``
 
 ## 📋 Visualize a aplicação completa
 - [Todo App](https://front-end-todo-app.vercel.app/)
